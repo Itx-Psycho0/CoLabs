@@ -1,0 +1,20 @@
+import config from "../config/config.js";
+
+const errorHandler = (err, req, res, next) => {
+  const statusCode = err.statusCode || 500;
+  const status = err.status || "error";
+
+  const response = {
+    success: false,
+    status,
+    message: err.message || "Internal Server Error",
+  };
+
+  if (config.nodeEnv !== "production") {
+    response.stack = err.stack;
+  }
+
+  res.status(statusCode).json(response);
+};
+
+export default errorHandler;
