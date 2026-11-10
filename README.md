@@ -7,6 +7,8 @@ This repository contains learning materials, documentation, and practice project
 This is a full-stack project focused on building a **real-time collaborative platform**.  
 The goal is to understand modern web development by implementing backend systems, frontend architecture, and real-time features.
 
+🌐 **Live Project:** [https://co-labs.in/](https://co-labs.in/)
+
 ## 👥 Contributors
 
 - **Anurag** 
